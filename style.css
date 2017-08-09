@@ -1,0 +1,234 @@
+/* Clear */
+.clear {
+	display: block;
+	clear: both;
+	float: none;
+}
+
+/* Typography */
+body {
+	font-family: 'Nunito', sans-serif;
+	color: #111;
+}
+h1, h2, .page .panel-content .recent-posts .entry-title {
+	color: #000;
+	font-family: 'BioRhyme';
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+h2 {
+	color: #647373;
+	font-weight: 400;
+}
+h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .05em;
+}
+@media screen and (min-width: 48em) {
+	.single-post .entry-title, .page .entry-title {
+	  font-size: 26px;
+	  font-size: 2.5rem;
+		font-weight: 300;
+	}
+}
+a {
+	color: #8d3d46;
+}
+
+blockquote {
+  font-family: 'courier-prime', Courier, monospace;
+  font-style: italic;
+  border-color: #000;
+  border-left: 3px solid #000;
+  padding-left: 1em;
+  margin-bottom: 2em;
+	color: #000;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+.wp-caption, .gallery-caption {
+  color: #000;
+  font-size: 14px;
+  font-size: 0.9rem;
+  font-style: italic;
+	font-family: 'courier-prime', Courier, monospace;
+}
+.wp-caption .wp-caption-text {
+  border-bottom: 3px solid #000;
+  padding-bottom: .8em;
+}
+
+/* Header area */
+.site-branding {
+  background-color: #EAE4E3;
+}
+.home .site-branding {
+	background-color: transparent;
+}
+.home .site-branding .wrap {
+	display: none;
+}
+div.custom-header {
+	background-image: url('https://2017.us.wordcamp.org/files/2017/03/Vid-skylineDark.jpg');
+}
+@media screen and ( max-width: 900px ) {
+	.home .site-branding .wrap {
+		display: block;
+		background: rgba(255,255,255,.70);
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
+}
+
+@media screen and ( max-width: 480px ) {
+	.home .site-branding .wrap {
+		text-align: center;
+		background: transparent;
+	}
+
+	body.home.has-header-image .site-title a,
+	body.home.has-header-image .site-description {
+		color: #fff
+	}
+
+	.home .custom-logo-link img {
+		max-height: 200px;
+		filter: invert(100%);
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
+}
+
+.site-title, .site-title a {
+  color: #000;
+  font-family: 'BioRhyme';
+  font-weight: 300;
+}
+.site-description {
+  color: #000;
+	font-family: 'courier-prime', Courier, monospace;
+	font-style: italic;
+}
+@media screen and (min-width: 900px) {
+	.home .site-branding {
+	    background-color: transparent;
+	}
+}
+
+/* Main navigation */
+.navigation-top {
+  border-bottom: 3px solid #000;
+	border-top: 3px solid #000;
+}
+.navigation-top a {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+  color: #000;
+  background-color: #c8ebeb;
+}
+.main-navigation a:hover {
+  color: #8D3D46;
+}
+.social-navigation a {
+  background-color: #000;
+}
+.site-footer {
+  border-top: 3px solid #000;
+  background-color: #C8EBEB;
+}
+
+/* Archives */
+.blog .page-header {
+  padding-bottom: 2em;
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+	.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+	  float: none;
+	  width: 100%;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+	  margin-bottom: 1.5em;
+	}
+}
+
+/* Buttons */
+button, a.button, input[type="button"], input[type="submit"] {
+  background-color: transparent;
+  border: 3px solid #222;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+	font-family: Nunito;
+	padding: 0.75em 2em;
+	font-weight: 600;
+}
+button:hover, a.button:focus, a.button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background: #E1D7D6;
+}
+
+/* Comment area */
+.comment-author {
+	font-family: 'courier-prime', Courier, monospace;
+	font-style: italic;
+}
+.comment-author .avatar {
+  border-radius: 50%;
+}
+.bypostauthor > .comment-body > .comment-meta > .comment-author .avatar {
+  border: 3px solid #333;
+  padding: 3px;
+  background-color: #C8EBEB;
+}
+
+/* List Styles */
+
+ul, ol, li > ul, li > ol {
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+}
+
+/* Style for an ol with h3 headers in each li (like code of conduct) */
+ol.headed-ol {
+	list-style-type: none;
+	margin-left: 0;
+}
+ol.headed-ol > li {
+	counter-increment: step-counter;
+}
+.headed-ol > li > h3::before {
+  content: counter(step-counter);
+  margin-right: 15px;
+  font-family: 'BioRhyme';
+  font-size: 2em;
+  font-weight: 300;
+  color: #8D3D46;
+}
+
+/* Org shortcode */
+.wcorg-organizer .wcorg-organizer-description {
+    padding-left: 6rem;
+    min-height: 5rem;
+}
+.wcorg-organizer .avatar {
+		float: left;
+    margin-left: -6rem;
+    width: 5rem;
+}
+
+/* Hide tix remaining */
+td.tix-column-remaining, th.tix-column-remaining {
+  display: none;
+}
