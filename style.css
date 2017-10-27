@@ -232,3 +232,142 @@ ol.headed-ol > li {
 td.tix-column-remaining, th.tix-column-remaining {
   display: none;
 }
+
+/** Schedule **/
+.page.page-one-column.page-slug-schedule #primary {
+	max-width: 100%;
+}
+
+.wcpt-schedule :not(.global-session) tr > td:first-of-type {
+	width: 100px;
+}
+
+.wcpt-schedule :not(.global-session) tr > td:nth-of-type(n + 2) {
+	width: calc(100%/3);
+}
+
+.wcpt-schedule .global-session td[colspan="3"] {
+	text-align: center;
+}
+
+.wcpt-schedule thead th {
+	background: #A74154;
+	color: #ffffff;
+	border-bottom: none;
+	font-weight: 300;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.wcpt-schedule tr, .wcpt-schedule td, .wcpt-schedule th {
+	text-align: center;
+	vertical-align: top;
+}
+
+.wcpt-track-description, .wcpt-session-speakers {
+	display: block;
+}
+
+.wcpt-schedule tr {
+	background: #f0f0f0;
+}
+
+.wcpt-schedule:first-of-type tr.wcpt-time-130pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-145pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-230pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-245pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-345pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-400pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-500pm .wcpt-time,
+.wcpt-schedule:first-of-type tr.wcpt-time-515pm .wcpt-time,
+.wcpt-schedule:last-of-type tr.wcpt-time-130pm .wcpt-time,
+.wcpt-schedule:last-of-type tr.wcpt-time-145pm .wcpt-time,
+.wcpt-schedule:last-of-type tr.wcpt-time-230pm .wcpt-time,
+.wcpt-schedule:last-of-type tr.wcpt-time-245pm .wcpt-time {
+	color: #f0f0f0;
+}
+
+.wcpt-schedule tr.global-session {
+	background: #C0EBEB;
+}
+
+.wcpt-schedule tr.global-session td {
+	padding: 20px 0 !important;
+}
+
+.wcpt-schedule tr td {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+@media (min-width: 701px) {
+	
+	.wcpt-schedule tr:not(.global-session) > td.wcpt-time {
+		border-right: 5px solid white;
+	}
+
+	.wcpt-schedule thead th:not(:last-of-type) {
+		border-style: solid;
+		border-width: 0 4px 0 0;
+	}
+
+	.wcpt-schedule tr {
+		border-bottom: 4px solid #ffffff;
+		border-top: 4px solid #ffffff;
+	}
+
+	.wcpt-schedule tr.global-session {
+		border-bottom: 4px solid #ffffff;
+		border-top: 4px solid #ffffff;
+	}
+}
+
+@media (max-width: 700px) {
+	
+	.wcpt-schedule tr.global-session {
+		background: rgba(192, 235, 235, 0.4);
+	}
+
+	.wcpt-schedule tr {
+		border: 1px solid #A74154;
+		border-width: 6px 1px 0 1px;
+		border-right-color: #333333;
+		border-left-color: #333333;
+		margin-bottom: 0;
+	}
+	
+	.wcpt-schedule tr:last-child {
+		border-bottom-width: 1px;
+		border-bottom-color: #333333;
+	}
+
+	tr:not(:last-child) .wcpt-session-type-session:last-child {
+		margin-bottom: 0;
+	}
+
+	.wcpt-schedule :not(.global-session) tr > td:first-of-type {
+		width: 100%;
+	}
+	
+	.wcpt-schedule :not(.global-session) tr > td:nth-of-type(n + 2) {
+		width: 100%;
+	}
+	
+	.wcpt-schedule :not(.global-session) tr > td.wcpt-time {
+		padding-top: 10px;
+	}
+	
+	span.wcpt-session-speakers {
+		padding-left: 0;
+	}
+
+	span.wcpt-session-speakers:before {
+		display: none;
+	}
+
+	.wcpt-schedule td a {
+		box-shadow: none;
+		padding-bottom: 0;
+	}
+}
