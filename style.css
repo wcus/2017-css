@@ -238,12 +238,17 @@ td.tix-column-remaining, th.tix-column-remaining {
 	max-width: 100%;
 }
 
-.wcpt-schedule :not(.global-session) tr > td:first-of-type {
+.wcpt-schedule :not(.global-session) tr > td:first-of-type,
+.sunday-schedule .wcpt-schedule tr > td.wcpt-time {
 	width: 100px;
 }
 
 .wcpt-schedule :not(.global-session) tr > td:nth-of-type(n + 2) {
 	width: calc(100%/3);
+}
+
+.sunday-schedule .wcpt-schedule tr > td:not(.wcpt-time) {
+	width: auto;
 }
 
 .wcpt-schedule .global-session td[colspan="3"] {
@@ -401,18 +406,18 @@ td.tix-column-remaining, th.tix-column-remaining {
 		bottom: -2px;
 	}
 	
-	.wcpt-schedule:first-of-type tr.wcpt-time-130pm .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-145pm .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-230pm .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-245pm .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-345pm .wcpt-time,
-	.friday-schedule .wcpt-schedule:first-of-type tr.wcpt-time-400pm .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-500pm .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-515pm .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-130pm .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-145pm .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-230pm .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-245pm .wcpt-time {
+	.wcpt-schedule:first-of-type tr.wcpt-time-130pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:first-of-type tr.wcpt-time-145pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:first-of-type tr.wcpt-time-230pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:first-of-type tr.wcpt-time-245pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:first-of-type tr.wcpt-time-345pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule:first-of-type tr.wcpt-time-400pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:first-of-type tr.wcpt-time-500pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:first-of-type tr.wcpt-time-515pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:last-of-type tr.wcpt-time-130pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:last-of-type tr.wcpt-time-145pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:last-of-type tr.wcpt-time-230pm:not(.global-session) .wcpt-time,
+	.wcpt-schedule:last-of-type tr.wcpt-time-245pm:not(.global-session) .wcpt-time {
 		color: #f0f0f0;
 	}
 }
