@@ -347,8 +347,7 @@ td.tix-column-remaining, th.tix-column-remaining {
 	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcpt-time,
 	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcb-track-fiddle,
 	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcb-track-guitar,
-	.friday-schedule .wcpt-schedule .wcpt-time-500pm .wcpt-time,
-	.friday-schedule .wcpt-schedule .wcpt-time-500pm .wcpt-session-empty,
+	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcpt-session-empty,
 	.saturday-schedule .wcpt-schedule .wcpt-time-115pm .wcpt-time,
 	.saturday-schedule .wcpt-schedule .wcpt-time-115pm .wcb-track-fiddle,
 	.saturday-schedule .wcpt-schedule .wcpt-time-115pm .wcb-track-guitar,
@@ -383,8 +382,7 @@ td.tix-column-remaining, th.tix-column-remaining {
 	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcpt-time:after,
 	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcb-track-fiddle:after,
 	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcb-track-guitar:after,
-	.friday-schedule .wcpt-schedule .wcpt-time-500pm .wcpt-time:after,
-	.friday-schedule .wcpt-schedule .wcpt-time-500pm .wcpt-session-empty:after,
+	.friday-schedule .wcpt-schedule .wcpt-time-445pm .wcpt-session-empty:after,
 	.saturday-schedule .wcpt-schedule .wcpt-time-115pm .wcpt-time:after,
 	.saturday-schedule .wcpt-schedule .wcpt-time-115pm .wcpt-session-empty:after,
 	.saturday-schedule .wcpt-schedule .wcpt-time-115pm .wcb-track-fiddle:after,
@@ -406,18 +404,19 @@ td.tix-column-remaining, th.tix-column-remaining {
 		bottom: -2px;
 	}
 	
-	.wcpt-schedule:first-of-type tr.wcpt-time-130pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-145pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-230pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-245pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-345pm:not(.global-session) .wcpt-time,
-	.friday-schedule .wcpt-schedule:first-of-type tr.wcpt-time-400pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-500pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:first-of-type tr.wcpt-time-515pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-130pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-145pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-230pm:not(.global-session) .wcpt-time,
-	.wcpt-schedule:last-of-type tr.wcpt-time-245pm:not(.global-session) .wcpt-time {
+	.friday-schedule .wcpt-schedule tr.wcpt-time-130pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-145pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-230pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-245pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-345pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-445pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-400pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-500pm:not(.global-session) .wcpt-time,
+	.friday-schedule .wcpt-schedule tr.wcpt-time-515pm:not(.global-session) .wcpt-time,
+	.saturday-schedule .wcpt-schedule tr.wcpt-time-130pm:not(.global-session) .wcpt-time,
+	.saturday-schedule .wcpt-schedule tr.wcpt-time-145pm:not(.global-session) .wcpt-time,
+	.saturday-schedule .wcpt-schedule tr.wcpt-time-230pm:not(.global-session) .wcpt-time,
+	.saturday-schedule .wcpt-schedule tr.wcpt-time-245pm:not(.global-session) .wcpt-time {
 		color: #f0f0f0;
 	}
 }
