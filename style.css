@@ -68,8 +68,8 @@ blockquote p:last-child {
 .home .site-branding {
 	background-color: transparent;
 }
-.home .site-branding .wrap {
-	display: none;
+/*.home .site-branding .wrap {
+	display: none; */
 }
 @media screen and ( max-width: 900px ) {
 	.home .site-branding .wrap {
