@@ -62,15 +62,15 @@ blockquote p:last-child {
 }
 
 /* Header area */
-.site-branding {
+/*.site-branding {
   background-color: #EAE4E3;
 }
 .home .site-branding {
 	background-color: transparent;
 }
-/*.home .site-branding .wrap {
-	display: none; */
-}
+.home .site-branding .wrap {
+	display: none; 
+} */
 @media screen and ( max-width: 900px ) {
 	.home .site-branding .wrap {
 		display: block;
