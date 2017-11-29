@@ -71,9 +71,6 @@ blockquote p:last-child {
 .home .site-branding .wrap {
 	display: none;
 }
-/* div.custom-header {
-	background-image: url('https://2017.us.wordcamp.org/files/2017/03/Vid-skylineDark.jpg');
-} */
 @media screen and ( max-width: 900px ) {
 	.home .site-branding .wrap {
 		display: block;
